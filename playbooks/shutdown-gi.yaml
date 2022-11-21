@@ -1,4 +1,4 @@
-- hosts: bastion
+- hosts: gibastion
   vars:
     internet_type: "{{ lookup('env','GI_INTERNET_ACCESS') }}"
     domain: "{{ lookup('env','GI_DOMAIN') }}"
