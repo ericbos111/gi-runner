@@ -38,6 +38,7 @@
     storage_class_rw_one: "{{ 'rook-ceph-block' if storage_type == 'R' else 'ocs-storagecluster-ceph-rbd' if storage_type == 'O' else 'px-csi-replicated' }}"
 
   vars_files:
+    - group_vars.yaml
     - version_vars.yaml
 
   tasks:
